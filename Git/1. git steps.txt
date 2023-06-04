@@ -1,0 +1,69 @@
+First step is to config who is using git
+
+git config --global user.name "Anugrah K M"
+git config --global user.email anugrahanu03@gmail.com
+
+A. When we first create a project
+
+	1). Create a new folder -> which will contain your project
+
+	2). Using terminal take it to the folder path
+		dir -> shows the iles/folders in the current path (C:\Users\username)
+		cd -> is used to change directory or path
+
+	3). Type cd Desktop -> It will move to desktop path
+
+	4). Now go into the folder you created
+		cd My Project
+		You can also type a part of the folder name and click Tab to see suggestion/autofill
+		cd .. -> takes to previous directory
+	
+B. Git
+
+	5). Type git init -> it will initialize an empty git repository for that folder
+		in the folder, .git foler will now be created which will be hidden. (. files will be hidden)
+		
+	6). Add an index.html file in the folder to simulate an actual project
+	
+	7). git status -> shows the changed files in red colour
+
+	8). Now we need to create a version so we need to do a commit
+
+	9). Before committing we need to add the files that need to be committed which means it will be "staged"
+		git add index.html (git add filename)
+
+	10). Now if we type git status -> it will show file in green colour and it will be added to a cache
+
+	11). TO commit type  git commit -m "initial commit" (git commit -m "message")
+		for this commit a commit id (40characters) will be generated
+		and a master branch (default) will be created
+		
+	12). Now if we type git status -> it will show nothing to commit, working tree clean
+
+	13). And if we edit the file and type git status again it will show modified: index.html in red color
+
+	14). So we need to commit this again 
+			git add index.html (git add filename filename filename)
+			git commit -m "second commit"
+
+
+	15). You can use git log to see commit history
+
+
+	16). If we need to move to a different/old commit (A) use , now check the file and you can see new changes has been reverted
+		git checkout commitId (40 characters or starting few characters)
+
+	17). Now if we type git log, it will only show that commit we checkout to
+
+	18). To see all the commits type, 
+		git log --all
+		Now you can see head has been moved to the current commit (A). Head will always be on the commit that we are working on.
+		But master will always be on the last commit (B)
+
+	19).	git checkout master -> to checkout to a branch
+		since master has the latest commit when we checkout we will get all the changes we have done
+		Now if we type git log --all we can see head will move to that commit (B)
+	
+	20). 
+	
+		

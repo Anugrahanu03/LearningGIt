@@ -1,0 +1,25 @@
+1). git branch branchname  -->to create a new branch (eg: git branch feature)
+2). git checkout branchname   -->to checkout to a branch (eg: git checkout feature)
+
+3). Before merging, to whatever branch we have to merge, we need to checkout to that branch so we can merge another branch into this one
+3). git merge branchname (eg: git branch feautre) --> will nerge into current branch (eg: master)
+	Here it wont create a new commit, it just move the master branch to that commit of the feature branch.
+	
+
+5). git branch  --> to check which branc we are in and it also shows all the branches in the repository
+
+6). git diff  --> shows the changed files and contents. Can also be used to compare two commits
+
+7). git stash  --> to remove all the changes we have done after we did a commit, which are not needed
+
+8). git log --decorate --graph  --> to see the flow of commits
+
+9). If two branches from a same branch have different codes/files modified gone in different direction in the git flow, it will be difficult to merge. 
+	If we merge we dont know which file/change goes to which branch. This is known as recursive merge
+
+	Recursive Merge - When two branches go in two direction(means diff files modified in both branches) and we need to merge it, so it will form a new commit.
+	
+	The branch from which we merge(where we type merge command) will have the new commit in it.
+10). Because it is a recursive merge and it creates a new commit we need to give a message along with the merge command
+
+11). If there is  a conflict when you try merge, fix the conflict and then git commit.

@@ -1,0 +1,19 @@
+***Clone***
+
+This enables us to work on the same repo from a diff machine or other people to work on the same repo
+
+This way, we can see all the commits/branches and people who have worked on that repo
+
+1. Copy .git url from the repository
+
+2. In cmd go to the directory where you want to clone the repo
+
+3. git clone <RemoteUrl> --> it will create a new folder with the repo name
+
+4. cd <FolderName> --> to change dir to that folder
+
+5. dir --> to see all the files in the folder
+
+6. git log --> to see all the commits 
+
+7. git remote --> to see the remote 

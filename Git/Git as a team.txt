@@ -1,0 +1,12 @@
+****To give access to your repository to a team****
+
+1. In settings -> Manage Access
+2. Invite people//team
+3. Search username / teamname
+4. Select Invite outside collaborator
+5. Select the role -> Read, Write, Maintain, Triage
+6. That person needs to accept invite
+
+
+7. git pull origin master --> To update a branch which is not the one we are checked out
+	git pull --> to update the master branch

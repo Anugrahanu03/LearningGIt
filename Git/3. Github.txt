@@ -1,0 +1,19 @@
+In the project directory
+
+1. Create a repository on github and copy the url of https
+
+2. git remote add <somename> <url> (mostly origin, github, hub) -->(configuring remote)
+   git remote add origin https://github.com/Anugrahanu03/LearningGIt.git
+
+	git remote -v --> to know to which link we are pushing
+
+3.  git push <REMOTENAME> <BRANCHNAME> (git push origin master) --> to push the code from local to server
+
+4. it may ask for username and password
+
+5. git push origin feature -->To push your other branch
+
+6. You can have multiple remotes for same repo, to see all the remotes git remote -v
+
+7. git commit --allow-empty -m "Empty commit" and git push origin main
+
